@@ -1,0 +1,69 @@
+Requisitos Não Funcionais — ISO/IEC 25010
+1. Acompanhar o pedido
+
+História de usuário:
+Como cliente, quero acompanhar o status do meu pedido depois de fazer a compra, para saber quando ele vai chegar.
+
+RNF 1.1 — Eficiência de desempenho
+
+O sistema deve atualizar a localização do entregador em até 5 segundos, considerando até 10 mil pedidos simultâneos.
+
+Característica ISO/IEC 25010: Eficiência de desempenho.
+
+RNF 1.2 — Confiabilidade
+
+Se a geolocalização do entregador falhar, o aplicativo deve mostrar a última posição conhecida, com um aviso, por até 2 minutos.
+
+Característica ISO/IEC 25010: Confiabilidade.
+
+RNF 1.3 — Usabilidade
+
+O cliente deve conseguir acessar o status do pedido e o mapa de localização em no máximo 2 interações.
+
+Característica ISO/IEC 25010: Usabilidade.
+
+2. Item indisponível
+
+História de usuário:
+Como dono de restaurante, quero marcar um item do cardápio como indisponível, para evitar receber pedido de algo que não posso preparar.
+
+RNF 2.1 — Eficiência de desempenho
+
+A alteração da disponibilidade deve ser refletida no cardápio do cliente em até 3 segundos, em 99% dos casos.
+
+Característica ISO/IEC 25010: Eficiência de desempenho.
+
+RNF 2.2 — Confiabilidade
+
+O sistema não deve confirmar um pedido com item indisponível, mesmo quando dois pedidos forem realizados simultaneamente.
+
+Característica ISO/IEC 25010: Confiabilidade.
+
+RNF 2.3 — Usabilidade
+
+Marcar ou desmarcar um item como indisponível deve levar no máximo 2 toques, sem precisar abrir um menu extra.
+
+Característica ISO/IEC 25010: Usabilidade.
+
+3. Reportar um problema
+
+História de usuário:
+Como entregador, quero reportar um problema durante a entrega, para que o suporte saiba e me ajude a resolver rápido.
+
+RNF 3.1 — Confiabilidade
+
+Se a conexão cair durante o reporte, o sistema deve salvar o registro e enviá-lo assim que a conexão voltar.
+
+Característica ISO/IEC 25010: Confiabilidade.
+
+RNF 3.2 — Eficiência de desempenho
+
+A notificação deve chegar ao suporte em até 30 segundos, em 95% dos casos.
+
+Característica ISO/IEC 25010: Eficiência de desempenho.
+
+RNF 3.3 — Segurança
+
+Somente o entregador da entrega ativa poderá reportar um problema.
+
+Característica ISO/IEC 25010: Segurança.
