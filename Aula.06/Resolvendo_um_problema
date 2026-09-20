@@ -1,0 +1,32 @@
+***Pergunta de empatia:*** Por que eu esqueço de fazer a atividade que o professor passa, mesmo
+já tendo anotado na matéria no caderno?
+
+***Definição:*** Eu não esqueco pr falta de desorganização e sim pq,
+é muito mais difícil abrir o caderno na matéria de determinado professor todos os dias.
+
+***Ideias:*** 
+1- Widget na tela inicial, mostrando a matéria e as datas de entrega das atividades;
+2- Notificações automáticas lembrando das datas conforme o dia da entrega se aproxima;
+3- Calendário de atividades acadêmicas, permitindo cadastrar às atividades, às matérias,
+e às datas de entrega organizadas, com avisos via SMS e WhatsApp conforme a data de entrega se aproxima.
+
+***Ideia Escolhida: 3***
+
+***História de Usuário:***
+1- Como aluno, quero cadastrar a data de uma prova, da matéria de Elicitação de requisitos,
+e receber uma notificação 4 dias antes no WhatsApp, para começar a estudar com antecedência;
+
+2-Como aluno, quero organizar minhas atividades com ordem de prioridade,
+para saber quais atividades preciso realizar primeiro;
+
+3-Como aluno, quero receber mensagens SMS e WhatsApp conforme a data da entrega se aproxima,
+para organizar minhas matérias.
+
+***Critérios de aceitação:***
+1- Dado que uma prova foi cadastrada para uma determinada data,quando faltar 4 dias então o sistema deve enviar uma notificação via SMS e WhatsApp ao aluno;
+
+2- Dado que o aluno possui muitas atividades a ser realizadas, ao cadastra-las o sistema organizará às atividades, 
+e então exibirá em ordem de prioridade;
+
+3- Dado que uma atividade possui determinada data de entrega, quando a data de entrega estiver se aproximando,
+então o sistema deve enviar uma notificação via SMS e WhatsApp.
