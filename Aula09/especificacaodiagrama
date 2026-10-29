@@ -1,0 +1,64 @@
+Caso de uso: Realizar pedido
+Sistema: Sistema Loja Online
+
+Ator principal
+O cliente.
+
+Descrição
+O cliente escolhe os produtos, informa o endereço de entrega e a forma de pagamento e envia o pedido para a loja.
+
+Gatilho
+O cliente decide comprar um ou mais produtos.
+
+Pré-condição
+O cliente entrou no sistema com o seu usuário e há pelo menos um produto no carrinho.
+
+Pós-condição
+O pedido fica registrado, aguardando a verificação do pagamento, e o atendimento é avisado.
+
+Fluxo principal
+O cliente pede para finalizar a compra.
+O sistema mostra o resumo do carrinho, com itens, quantidades e subtotal.
+O cliente informa o endereço de entrega.
+O sistema calcula o frete e mostra o valor total.
+O cliente escolhe a forma de pagamento.
+O sistema confere se todos os itens estão disponíveis em estoque.
+O cliente confirma o pedido.
+O sistema registra o pedido, mostra o número dele ao cliente e avisa o atendimento.
+Fluxo alternativo: aplicar cupom de desconto
+
+Quando: 
+No passo 4, depois de ver o valor total, o cliente quer usar um cupom de desconto.
+
+Passos:
+O cliente informa o código do cupom.
+O sistema confere se o cupom é válido e recalcula o valor total.
+
+Retorno: 
+O fluxo volta ao passo 5.
+
+Exceção:
+item sem estoque
+
+Quando:
+No passo 6, algum item não está disponível na quantidade pedida.
+
+Passos:
+O sistema avisa qual item está indisponível e mostra a quantidade disponível.
+O cliente reduz a quantidade ou remove o item do carrinho.
+
+Retorno:
+O fluxo volta ao passo 2.
+
+Exceção:
+desistência
+
+Quando:
+Antes do passo 8, o cliente desiste da compra.
+
+Passos:
+O cliente cancela o pedido.
+O sistema descarta o pedido que não foi confirmado.
+
+Retorno:
+O caso de uso termina sem registrar o pedido.
